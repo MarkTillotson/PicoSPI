@@ -5,6 +5,7 @@
 #ifndef __PICOSPI_H__
 #define __PICOSPI_H__
 
+#include <hardware/spi.h>
 #include <Arduino.h>
 
 class PicoSPI
