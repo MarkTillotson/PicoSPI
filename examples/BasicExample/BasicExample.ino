@@ -1,3 +1,7 @@
+/*
+ * licenced with Creative Commons: CC0 1.0 Universal (CC0 1.0)
+ */
+
 #include <PicoSPI.h>
 
 

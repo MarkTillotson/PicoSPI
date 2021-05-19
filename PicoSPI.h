@@ -1,3 +1,7 @@
+/*
+ * licenced with Creative Commons: CC0 1.0 Universal (CC0 1.0)
+ */
+
 #ifndef __PICOSPI_H__
 #define __PICOSPI_H__
 
