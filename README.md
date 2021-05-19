@@ -20,6 +20,7 @@ although this is not required by this library.
 
 To use the library
 
+code(
 #include <PicoSPI.h>
 
 void setup ()
@@ -37,6 +38,7 @@ void loop ()
   PicoSPI0.endTransaction () ;
   ...
 }
+)
 
 The configuration arguments are 4 pins, namely SCLK, MOSI, MISO and CS, in that order,
 and all must be supplied.  Also a frequency, an SPI mode, and a flag "auto_transations".
