@@ -10,7 +10,7 @@ as Earle F. Philhower's Arduino Pico port.  And it supports both SPI0 and SPI1.
 It was written in response to the SPI support in these two implementations being
 different.
 
->>> NOTE: it supports SPI master mode only <<<
+** NOTE: it supports SPI master mode only **
 
 The SPI units are completely independent but each is limited to a particular subset of
 the Pico's pins, as shown on the various pinout diagrams for the Pico.
@@ -20,7 +20,7 @@ although this is not required by this library.
 
 To use the library
 
-code(
+```
 #include <PicoSPI.h>
 
 void setup ()
@@ -38,7 +38,7 @@ void loop ()
   PicoSPI0.endTransaction () ;
   ...
 }
-)
+```
 
 The configuration arguments are 4 pins, namely SCLK, MOSI, MISO and CS, in that order,
 and all must be supplied.  Also a frequency, an SPI mode, and a flag "auto_transations".
