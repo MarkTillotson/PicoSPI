@@ -26,7 +26,9 @@ To use the library
 void setup ()
 {
   ...
-  PicoSPI0.configure (sclk, mosi, miso, cs, frequency, mode, auto_transations) ;
+  bool success = PicoSPI0.configure (sclk, mosi, miso, cs, frequency, mode, auto_transations) ;
+  if (!success)
+    Serial.println ("PicoSPI configuration was invalid") ;
 }
 
 void loop ()
