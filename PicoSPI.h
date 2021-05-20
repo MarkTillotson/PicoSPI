@@ -5,6 +5,10 @@
 #ifndef __PICOSPI_H__
 #define __PICOSPI_H__
 
+#ifndef ARDUINO_ARCH_RP2040
+#  error This version of the PicoSPI library only works for the Raspberry Pi Pico board
+#endif
+
 #include <hardware/spi.h>
 #include <Arduino.h>
 
