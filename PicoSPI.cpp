@@ -164,16 +164,8 @@ bool PicoSPI::check_configuration (void)
     frequency = 2500 ;
   if (frequency > 25000000)
     frequency = 25000000 ;
-  
-  switch (mode)  // translate Arduino style modes to 2 bit int.
-  {
-  case SPI_MODE0: mode = 0 ; break ;
-  case SPI_MODE1: mode = 1 ; break ;
-  case SPI_MODE2: mode = 2 ; break ;
-  case SPI_MODE3: mode = 3 ; break ;
-  default: return false ;
-  }
 
+  if (mode > 3) return false ;
   return true ;  // all checks passed
 }
 

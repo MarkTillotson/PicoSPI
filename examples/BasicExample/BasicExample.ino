@@ -37,7 +37,7 @@ void setup()
   // MISO = pin 4    (alternative pins are 0, 16, 20)
   // CS   = pin 5    (alternative pins are 1, 17, 21)
   // and for 1MHz clock, in mode 0, without automatic transactions
-  if (! PicoSPI0.configure (2, 3, 4, 5, 1000000, SPI_MODE0, false))
+  if (! PicoSPI0.configure (2, 3, 4, 5, 1000000, 0, false))
   {
     while (true) {}
   }
@@ -51,7 +51,7 @@ void setup()
   // MISO = pin 8    (alternative pins are 12, 28)
   // CS   = pin 9    (alternative pins are 13, 25 - but note 25 is only the LED on the PCB)
   // and for 1MHz clock, in mode 0, without automatic transactions
-  if (! PicoSPI1.configure (10, 11, 8, 9, 1000000, SPI_MODE0, false))
+  if (! PicoSPI1.configure (10, 11, 8, 9, 1000000, 0, false))
   {
     while (true) {}
   }
